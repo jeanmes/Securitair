@@ -1,0 +1,139 @@
+<html>
+  <head>
+    <title>Securit'Air</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/creation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <div class="header">
+    <a href="accueilconnecter.html" class="logo">
+      <img
+        src="Ressources/logojr2.png"
+        alt="Logo"
+        width="110"
+        height="auto"
+      />
+    </a>
+    <div class="header-center">
+      <a href="accueilconnecter.html">Accueil</a>
+      <a href="profil.php">Profil</a>
+      <a href="mesure.php">Mesures</a>
+      <a href="messagerie.html">Messagerie</a>
+    </div>
+    <a href="accueil.html">Se déconnecter</a>
+    <div class="header-right">
+      <a href="profil.php" class="logo">
+        <img
+          src="Ressources/profiljr.png"
+          alt="Logo"
+          width="50"
+          height="auto"
+        />
+      </a>
+    </div>
+  </div>
+        
+    </div>
+    <body>
+      <section class="modifier">
+      <h1>Creer un nouveau profil</h1>
+
+    <div class="formulaire">
+      <form action="/Securit'Air 2/Model/creation.php" method="post">
+            <h3>Nom</h3>
+            <input
+            type="text"
+            name="nom"
+            placeholder="Entrez votre nom"
+            required
+            /></div>
+
+            <div class="pat1"><h3>Prenom</h3>
+            <input
+            type="text"
+            name="prenom"
+            placeholder="Entrez votre prénom"
+            required
+            /></div>
+        </div>
+        <h3>Identifiant</h3>
+        <input
+          type="text"
+          name="identifiant"
+          placeholder="Entrez votre Identifiant"
+          required
+        />
+        <h3>E-mail</h3>
+        <input
+          type="email"
+          name="email"
+          placeholder="Entrez votre adresse e-mail"
+          required
+        />
+      
+        <h3>telephone</h3>
+        <input
+          type="int"
+          name="telephone"
+          placeholder="Entrez votre telephone"
+          required
+        />
+        <h3>adresse</h3>
+        <input
+          type="text"
+          name="adresse"
+          placeholder="Entrez votre adresse"
+          required
+        />
+
+        <h3>nom_centre_tri</h3>
+        <input
+          type="text"
+          name="nom_centre_tri"
+          placeholder="Entrez votre nom_centre_tri"
+          required
+        />
+
+        <h3>type</h3>
+        <input
+          type="text"
+          name="type"
+          placeholder="Entrez votre type"
+          required
+        />
+        <h3>Mot de passe</h3>
+        <input
+          type="text"
+          name="password"
+          placeholder="Entrez votre mot de passe"
+          required
+        />
+        <h3>Id Centre</h3>
+        <input
+          type="text"
+          name="num"
+          placeholder="Entrez votre Id de centre"
+          required
+        />
+          <div class="subscribebutton"><button type="submit">Creer</button></div>
+        </div>
+      </form>
+    </section>
+    </body>
+      <footer>
+        <img src="Ressources/logo.png" alt="Logo" class="footer-logo" />
+        <div class="cgu">
+          <a href="faq.php" class="footer-cgu">FAQ</a>
+          <a href="cgv.html" class="footer-cgu">Conditions générales de ventes</a>
+          <a href="ml.html" class="footer-cgu">Mentions Légales</a>
+          <a href="pc.html" class="footer-cgu">Politique de confidentialité</a>
+        </div>
+      </footer>
+</html>

@@ -1,0 +1,91 @@
+<<html>
+  <head>
+    <title>Securit'Air</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/creation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <div class="header">
+    <a href="accueilconnecter.html" class="logo">
+      <img
+        src="Ressources/logojr2.png"
+        alt="Logo"
+        width="110"
+        height="auto"
+      />
+    </a>
+    <div class="header-center">
+      <a href="accueilconnecter.html">Accueil</a>
+      <a href="profil.php">Profil</a>
+      <a href="mesure.php">Mesures</a>
+      <a href="messagerie.html">Messagerie</a>
+    </div>
+    <a href="accueil.html">Se déconnecter</a>
+    <div class="header-right">
+      <a href="profil.php" class="logo">
+        <img
+          src="Ressources/profiljr.png"
+          alt="Logo"
+          width="50"
+          height="auto"
+        />
+      </a>
+    </div>
+  </div>
+  <body>
+  <section class="modifier">
+      <div class="container">
+        <div class="left">
+            <h1><span class="orange">Modifier la</span> FAQ</h1>
+    </div>
+    <div class="formulaire">
+      <form action="/Securit'Air 2/Model/faq_modification.php" method="post" > 
+        <h3>Numéro de la question</h3>
+        <input
+          type="int"
+          name="numero"
+          placeholder="Entrez le numero de la question"
+          required>
+        
+
+        <h3>Question</h3>
+        <input
+          type="text"
+          name="question"
+          id="question"
+          placeholder="Entrer la nouvelle question"
+          required >
+        
+
+        <h3>Reponse</h3>
+        <input
+          type="text"
+          name="reponse"
+          placeholder="Entrez la nouvelle réponse"
+          required
+        />
+      
+
+          <div class="connectbutton"><button type="submit">Modifier la FAQ</button></div>
+        </div>
+      </form>
+      
+  </section>
+</body>
+  <footer>
+    <img src="Ressources/logo.png" alt="Logo" class="footer-logo" />
+    <div class="cgu">
+      <a href="faq.php" class="footer-cgu">FAQ</a>
+      <a href="cgv.html" class="footer-cgu">Conditions générales de ventes</a>
+      <a href="ml.html" class="footer-cgu">Mentions Légales</a>
+      <a href="pc.html" class="footer-cgu">Politique de confidentialité</a>
+    </div>
+  </footer>
+</html>

@@ -1,0 +1,255 @@
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    padding: 0.5rem 2rem;
+    background-color: white;
+    margin-top: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  .header a {
+    color: rgb(56, 56, 56);
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    border-radius: 6px;
+    font-family: Helvetica, sans-serif;
+  }
+  
+  .header a:hover {
+    color: #eb2092;
+  }
+  
+  .header-center {
+    flex: 1;
+  }
+  
+  .logo {
+    width: auto;
+    height: auto;
+    margin-right: 2rem;
+  }
+  
+  body {
+    background-color: #222222;
+    margin: 0;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  
+    @media screen and (max-width: 500px) {
+      .header a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      .header-right {
+        float: none;
+      }
+    }
+  }
+  
+  /* MAIN */
+  
+  h2 {
+    font-size: 60px;
+    font-family: "Space Grotesk", sans-serif;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #eb2092;
+    width: 700px;
+  }
+  
+  p {
+    font-size: 25px;
+    width: 1900px;
+    margin-right: 60px;
+    font-family: Helvetica, sans-serif;
+    color: #ffffff;
+  }
+  
+  /* profil */
+  .profil {
+    margin-top: 100px;
+    padding: 20px;
+    width: 55%;
+    height: 600px;
+    margin-left: 100px;
+    display: flex;
+    align-items: row;
+  }
+  
+  .part1 {
+    width: 80%;
+  }
+  
+  .part2 {
+    margin-left: 80px;
+    width: 40%;
+  }
+  .profil img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .profil form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profil input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-family: Helvetica, sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background: linear-gradient(to right, #ff7dc6, #eb2092);
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  
+  button:hover {
+    background: #fff;
+    color: #eb2092;
+    background-position: 100%;
+
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: row;
+    max-width: 400px;
+  }
+  
+  .search-bar input {
+    padding: 8px;
+    font-size: 14px;
+    border-right: none;
+    margin: 0;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-right: none;
+  }
+  
+  .search-bar button {
+    padding: 8px;
+    font-size: 14px;
+    background: #ff70c1;
+    color: white;
+    cursor: pointer;
+    margin: 0;
+    height: 40px;
+    border-radius: 0;
+  }
+  
+  h4 {
+    font-size: 18px;
+    width: 1900px;
+    margin-right: 60px;
+    font-family: Helvetica, sans-serif;
+    color: #ffffff;
+  }
+  
+  .part2 button {
+    padding: 8px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    margin: 0;
+    height: 40px;
+    margin-bottom: 100px;
+  }
+  .part2 button:hover {
+    background: #fff;
+    color: #eb2092;
+    background-position: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .profil {
+      flex-direction: column;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .part1,
+    .part2 {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  
+    .search-bar {
+      max-width: 100%;
+    }
+  
+    .search-bar input,
+    .search-bar button {
+      height: 30px;
+    }
+  
+    h4 {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+  
+  /* FOOTER */
+  
+  footer {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    padding: 1%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    height: 15px;
+    margin-left: 30px;
+  }
+  
+  .footer-cgu {
+    border: none;
+    color: rgb(126, 126, 126);
+    cursor: pointer;
+    font-size: 14px;
+    padding-top: 4%;
+    margin-right: 20px;
+  }
+  

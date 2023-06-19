@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <title>Securit'Air</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/contact.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <div class="header">
+    <a href="accueil.html" class="logo">
+      <img
+        src="Ressources/logo.png"
+        alt="Logo"
+        width="300"
+        height="auto"
+      />
+    </a>
+    <div class="header-center">
+      <a href="accueil.html">Accueil</a>
+      <div class="dropdown">
+        <a class="dropbtn">A propos</a>
+        <div class="dropdown-content">
+          <a href="qsn.html">Qui sommes nous</a>
+          <a href="produit.html">Notre produit</a>
+        </div>
+      </div>
+      <a href="contact.html">Nous contacter</a>
+    </div>
+    <div class="header-right">
+      <a href="subscribe.php">S'inscrire</a>
+      <a class="btn" href="connect.php">Se connecter</a>
+    </div>
+  </div>
+
+  <body>
+    <section class="contact">
+        <div class="container">
+        <div class="left">
+            <h1><span class="orange">Contactez</span>-nous</h1>
+            <h2>Intéressé par notre système ?</h2>
+            <p>
+            Notre équipe est disponible pour répondre à toutes vos questions ou
+            préoccupations. N'hésitez pas à nous contacter en utilisant le
+            formulaire :
+            </p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <img src="Ressources/it-removebg-preview.png" />
+                    <p>+33 1 23 45 67 89</p>
+                </div>
+                <div class="contact-item">
+                    <img src="Ressources/ie-removebg-preview.png" />
+                    <p>contact@securitair.com</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="right">
+            <form action="/Securit'Air 2/Controller/mail.php" method="post">
+            <h3>Nom</h3>
+            <input
+                type="text"
+                name="nom"
+                placeholder="Entrez votre nom"
+                required
+            />
+
+            <h3>E-mail</h3>
+            <input
+                type="email"
+                name="adresse"
+                placeholder="Entrez votre adresse e-mail"
+                required
+            />
+
+            <h3>Votre message</h3>
+            <textarea
+                name="message"
+                placeholder="Entrez votre message"
+                required
+            ></textarea>
+            <div class="contactbutton">
+            <button type="submit">Envoyer</button></div>
+            </form>
+        </div>
+        </div>
+    </body>
+  </section>
+
+  <footer>
+    <div class="footer-left">
+      <a href="faq.php" class="faq">Vous pouvez aussi regarder notre FAQ</a>
+
+      <div class="contacter">
+        <a href="contact.html" class="button">Nous contacter</a>
+        <i href="https://www.facebook.com/securitair"
+          ><img src="Ressources/i.png" class="insta"
+        /></i>
+        <i href="https://www.instagram.com/secur_itairparis/"
+          ><img src="Ressources/f.png" class="facebook"
+        /></i>
+      </div>
+    </div>
+    <img src="Ressources/logo.png" alt="Logo" class="footer-logo" />
+    <div class="cgu">
+      <a href="cgv.html" class="footer-cgu">Conditions générales de ventes</a>
+      <a href="ml.html" class="footer-cgu">Mentions Légales</a>
+      <a href="pc.html" class="footer-cgu">Politique de confidentialité</a>
+    </div>
+  </footer>
+</html>

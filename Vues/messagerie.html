@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>Securit'Air</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="CSS/messagerie.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <div class="header">
+    <a href="accueilconnecter.html" class="logo">
+      <img
+        src="Ressources/logojr2.png"
+        alt="Logo"
+        width="110"
+        height="auto"
+      />
+    </a>
+    <div class="header-center">
+      <a href="accueilconnecter.html">Accueil</a>
+      <a href="profil.php">Profil</a>
+      <a href="mesure.php">Mesures</a>
+      <a href="messagerie.html">Messagerie</a>
+    </div>
+    <a href="accueil.html">Se déconnecter</a>
+    <div class="header-right">
+      <a href="profil.php" class="logo">
+        <img
+          src="Ressources/profiljr.png"
+          alt="Logo"
+          width="50"
+          height="auto"
+        />
+      </a>
+    </div>
+  </div>
+  
+  <body>
+    <div class="commentaire">
+        <h2>Messagerie</h2>
+        <p>
+          Vous pouvez envoyer un message à un autre utilisateur du site en entrant son email et votre commentaire
+          <br />N'hésitez pas à faire vos retours sur la qualité de l'environnement de travail
+        </p>
+        <form action="/Securit'Air 2/Controller/messagerie.php" method="post">
+          <textarea
+            name="commentaire"
+            placeholder="Écrire un commentaire"
+          ></textarea>
+          <input type="email" name="email" placeholder="Email" />
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <footer>
+    <img src="Ressources/logo.png" alt="Logo" class="footer-logo" />
+    <div class="cgu">
+      <a href="faq.php" class="footer-cgu">FAQ</a>
+      <a href="cgv.html" class="footer-cgu">Conditions générales de ventes</a>
+      <a href="ml.html" class="footer-cgu">Mentions Légales</a>
+      <a href="pc.html" class="footer-cgu">Politique de confidentialité</a>
+    </div>
+  </footer>
+</html>

@@ -1,0 +1,54 @@
+<?php
+//  code PHP qui permet de récupérer dans des variables les données qui viennent du formulaire
+$identifiant = $_POST['identifiant']; // récupère la valeur du champ nom du formulaire et l'assigne à la variable $nom (valeur par défaut chaine vide '')
+$email = $_POST["e-mail"];
+$nom = $_POST['nom'];
+$prenom = $_POST["prenom"];
+$mdp = $_POST['mdp'];
+$mdp2 = $_POST["mdp2"];
+
+// code PHP qui vérifie si les champs prénom et nom sont remplis
+if (empty($identifiant) || empty($email) || empty($nom) || empty($prnom) || empty($mdp) || empty($mdp2)){
+        if(empty($identifiant)){
+            $errMessageIdentifiant = "true";
+        } else {
+            $errMessageIdentifiant = "false";
+            setcookie("identifiant", $identifiant); //cookie
+        }
+        if(empty($email)){
+            $errMessageEmail = "true";
+        } else {
+            $errMessageEmail = "false";
+            setcookie("email", $email);
+        }
+         if(empty($nom)){
+            $errMessageNom = "true";
+        } else {
+            $errMessageNom = "false";
+            setcookie("nom", $nom);
+        }
+        if(empty($prenom)){
+            $errMessagePrenom = "true";
+        } else {
+            $errMessagePrenom = "false";
+            setcookie("nom", $nom);
+        }
+        if(empty($mdp)){
+            $errMessageMdp = "true";
+        } else {
+            $errMessageMdp = "false";
+            setcookie("mdp", $mdp);
+        }
+         if(empty($mdp2)){
+            $errMessageMdp2 = "true";
+        } else {
+            $errMessageMdp2 = "false";
+            setcookie("mdp2", $mdp2);
+        }
+    
+       //redirection vers index.php :
+        header("Location: subscribe.php?nom=" . urlencode($errMessageNom) . "&prenom=" . urlencode($errMessagePrenom) . "&identifiant=" . urlencode($errMessagedateIdentifiant) . "&email=" . urlencode($errMessageemail) . "&mdp=" . urlencode($errMessageMdp) . "&mdp2=" . urlencode($errMessageMdp2));
+       //La redirection vers la page de connexion avec les valeurs des variables d'erreur dans l'URL permet à la page suivante de récupérer ces informations et d'afficher des messages d'erreur appropriés à côté des champs vides dans le formulaire
+    } else {
+        header("Location: accueilconnecter.php?nom=" . urlencode($errMessageNom) . "&prenom=" . urlencode($errMessagePrenom) . "&identifiant=" . urlencode($errMessagedateIdentifiant) . "&email=" . urlencode($errMessageemail) . "&mdp=" . urlencode($errMessageMdp) . "&mdp2=" . urlencode($errMessageMdp2));
+    }
